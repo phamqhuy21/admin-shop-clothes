@@ -16,16 +16,6 @@ export default function NavSide() {
           <ul className="nav" id="main-menu">
             <li>
               <a
-                className={
-                  location?.pathname === PATH.ADMIN ? "active-menu" : ""
-                }
-                href={PATH.ADMIN}
-              >
-                <i className="glyphicon glyphicon-user" /> Role
-              </a>
-            </li>
-            <li>
-              <a
                 href={PATH.PRODUCT}
                 className={
                   location?.pathname === PATH.PRODUCT ? "active-menu" : ""
@@ -52,6 +42,16 @@ export default function NavSide() {
                 }
               >
                 <i className="fa fa-sitemap" /> Warehouse
+              </a>
+            </li>
+            <li>
+              <a
+                className={
+                  location?.pathname === PATH.ADMIN ? "active-menu" : ""
+                }
+                href={PATH.ADMIN}
+              >
+                <i className="glyphicon glyphicon-user" /> Account
               </a>
             </li>
             {/* <li>
